@@ -6,18 +6,31 @@
     <title>PV Tracking</title>
 
     <!-- Coloque o código de rastreamento do seu sistema de análise aqui, como o Google Analytics, Facebook Pixel, etc. -->
-    
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11258785249"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11258785249');
+</script>
+<!-- Event snippet for PAGEVIEW - Puravive conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-11258785249/7ZMICOiU7IEZEOHbzfgp'});
+</script>
+
 
     <!-- Redirecionamento para o link de afiliado -->
     <script>
         // Obtenha os parâmetros da URL original
         var urlParams = new URLSearchParams(window.location.search);
         var subidParam = urlParams.get('subid');
-        var affParam = urlParams.get('aff');
+        var affParam = urlParams.get('aff_id');
 
         // Substitua 'SEU_LINK_DE_AFILIADO' pelo seu link de afiliado real
         // Certifique-se de incluir os parâmetros necessários no link de afiliado
-        var linkAfiliado = 'SEU_LINK_DE_AFILIADO?subid=' + subidParam + '&aff=' + affParam;
+        var linkAfiliado = 'https://getpuravive.com/news/?aff_id=' + subidParam + '&sub_id=' + affParam;
 
         // Redirecionamento para o link de afiliado
         window.location.href = linkAfiliado;
