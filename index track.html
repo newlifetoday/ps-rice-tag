@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PV Tracking</title>
+
+    <!-- Coloque o código de rastreamento do seu sistema de análise aqui, como o Google Analytics, Facebook Pixel, etc. -->
+    
+
+    <!-- Redirecionamento para o link de afiliado -->
+    <script>
+        // Obtenha os parâmetros da URL original
+        var urlParams = new URLSearchParams(window.location.search);
+        var subidParam = urlParams.get('subid');
+        var affParam = urlParams.get('aff');
+
+        // Substitua 'SEU_LINK_DE_AFILIADO' pelo seu link de afiliado real
+        // Certifique-se de incluir os parâmetros necessários no link de afiliado
+        var linkAfiliado = 'SEU_LINK_DE_AFILIADO?subid=' + subidParam + '&aff=' + affParam;
+
+        // Redirecionamento para o link de afiliado
+        window.location.href = linkAfiliado;
+    </script>
+</head>
+<body></body>
+</html>
