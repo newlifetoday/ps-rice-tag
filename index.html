@@ -7,19 +7,13 @@
 
     <!-- Coloque o código de rastreamento do seu sistema de análise aqui, como o Google Analytics, Facebook Pixel, etc. -->
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11258785249"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-11258785249');
-</script>
-<!-- Event snippet for PAGEVIEW - Puravive conversion page -->
-<script>
-  gtag('event', 'conversion', {'send_to': 'AW-11258785249/7ZMICOiU7IEZEOHbzfgp'});
-</script>
-
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11258785249"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-11258785249');
+    </script>
 
     <!-- Redirecionamento para o link de afiliado -->
     <script>
@@ -32,8 +26,11 @@
         // Certifique-se de incluir os parâmetros necessários no link de afiliado
         var linkAfiliado = 'https://getpuravive.com/news/?aff_id=' + subidParam + '&sub_id=' + affParam;
 
-        // Redirecionamento para o link de afiliado
-        window.location.href = linkAfiliado;
+        // Atraso de 3 segundos antes do redirecionamento
+        setTimeout(function(){
+            // Redirecionamento para o link de afiliado
+            window.location.href = linkAfiliado;
+        }, 3000); // 3000 milissegundos = 3 segundos
     </script>
 </head>
 <body></body>
